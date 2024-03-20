@@ -1,0 +1,30 @@
+#wrap ul {list-style: none;}
+#wrap { width:100%; margin: 0 auto; border:solid 0px;overflow:auto;}
+#wrap ul {margin:0px;padding:0px;}
+#wrap li { margin-bottom:0px;display:inline;}
+#wrap li div { overflow:hidden; position:relative; border:0px solid white; box-shadow: 0 2px 5px rgba(0,0,0,.4);float:left;width:100%;}
+#wrap .shadow {  position:absolute; top:0; left:0; opacity:1; background:transparent; width:100%; height:100%; 
+	-webkit-box-shadow: inset 0 0 60px 20px rgba(37,27,23,.5);
+	-moz-box-shadow: inset 0 0 60px 20px rgba(37,27,23,.5);	
+	box-shadow: inset 0 0 60px 20px rgba(37,27,23,.5);
+	-webkit-transition: opacity 1.5s .5s;-moz-transition:opacity 1.5s .5s; -o-transition:opacity 1.5s .5s;-ms-transition:all 1.5s .5s; transition:opacity 1.5s .5s;}
+#wrap li div:hover .shadow {opacity:0;}
+
+
+
+#wrap div img 
+{
+position:relative; 
+top:0;
+left:0; 
+max-width:auto;
+width:100%;
+-webkit-transition:all .5s 0s;
+-moz-transition:all .5s 0s;
+ -o-transition:all .5s 0s;
+ -ms-transition:all .5s 0s; 
+ transition:all .5s 0s;
+ }
+#wrap div img.onhover {opacity:0;position:absolute;}
+#wrap div:hover img {/*-webkit-transform: scale(1) rotate(0);-moz-transform:scale(1) rotate(0);-o-transform:scale(1) rotate(0);-ms-transform:scale(1) rotate(0);transform:scale(1) rotate(0);*/}
+#wrap div:hover img.onhover {opacity:1;}

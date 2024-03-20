@@ -1,0 +1,477 @@
+*{
+    margin:0;
+    padding:0;
+}*
+  /* Navbar  */
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+      flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+      margin-bottom: 10px;
+  }
+
+  .navbar-nav .nav-link {
+      padding: 10px;
+      text-align: center;
+  }
+}
+
+ /* slider animastion  */
+.imgslider {
+  width: 100%; /* Set to full width by default */
+  height: 300px; /* Adjust height as needed for each device */
+  background-image: url(/image/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the background image covers the entire element */
+  background-position: center; /* Center the background image */
+  animation: changeImage 25s linear infinite;
+}
+
+@keyframes changeImage {
+  0% {
+      background-image: url(/image/banner4.jpg);
+  }
+  25% {
+      background-image: url(/image/banner2.jpg);
+  }
+  50% {
+      background-image: url(/image/banner1.jpg);
+  }
+  75% {
+      background-image: url(/image/banner3.jpg);
+  }
+  100% {
+      background-image: url(/image/banner5.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .imgslider {
+      height: 400px; /* Adjust height for tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  .imgslider {
+      height: 670px; /* Adjust height for desktops */
+  }
+}
+
+/* image home page choklete namkeet sweets  */
+
+  #div4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    color: #424144;
+    margin-top: 2%;
+}
+
+#h1 {
+    font-size: 24px; /* Default font size */
+}
+
+#btn2 {
+    font-size: 20px;
+    padding: 10px 20px; /* Adjust padding for better touchability on mobile devices */
+    border-radius: 10px;
+    transition: all 1s;
+    margin-top: 20px; /* Adjust margin for spacing */
+}
+
+#btn2:hover {
+    transform: scale(0.7);
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    /* Tablet */
+    #h1 {
+        font-size: 28px; /* Increase font size for tablets */
+    }
+}
+
+@media (min-width: 992px) {
+    /* Desktop */
+    #h1 {
+        font-size: 32px; /* Increase font size for desktops */
+    }
+}
+
+#div5 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap; /* Allow items to wrap to next line on smaller screens */
+}
+
+#image {
+  width: 300px; /* Adjust width as needed */
+  margin-bottom: 20px; /* Add some spacing between items */
+  position: relative;
+}
+
+#im {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+#div6 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+#image:hover #div6 {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+h4 {
+  background-color: orange;
+  width: 200px;
+  color: white;
+  padding: 10px;
+}
+
+#div6 > * {
+  transform: translateY(10px);
+  transition: transform 0.6s;
+}
+
+#div6:hover > * {
+  transform: translateY(0px);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  #div5 {
+      justify-content: center; /* Center items on smaller screens */
+  }
+
+  #image {
+      width: 90%; /* Make images occupy 90% of the container width */
+  }
+
+  h4 {
+      width: 90%; /* Make h4 elements occupy 90% of the container width */
+  }
+}
+                /* Sweets Page   */
+                #h3{
+                  margin-top: 7%;
+                  border-bottom: 3px solid goldenrod;
+                  width: 500px;
+              }
+              #p3{
+                  width: 400px;
+                  margin-top: 20px;
+              }
+              .chil3{
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+               
+                }
+                .chil3 .chil4{
+               width: 350px;
+                background-color: #f5f5f5;
+               box-shadow: 0px 10px 20px rgba(0,0,0, 0.3);
+               border-radius: 5px;
+               padding: 5px;
+               margin-top: 20px;
+               overflow: hidden;
+              } 
+              .chil3 .chil4 img{
+              width: 100%;
+              height:320px;
+              } 
+              .chil4 img:hover{
+               transform: scale(1.1);
+               transition: all 4s;
+              }
+              .div .chil3 .pagdi{
+                      padding: 15px 20px;
+                      font-size: 20px; 
+              }
+              .div .chil3 .box{
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 padding: 20px;
+              }
+              .chil3 .chil4 .box .price{
+                 color: #f63e4e;
+                 font-size: 20px;
+                 font-weight: bold;
+              }
+              .ton{
+               font-size: 14px;
+               color:#f63e4e;
+               padding: 10px 18px;
+               border: 1px solid #f63e4e;
+               font-weight: bold;
+               border-radius: 20px; 
+              }
+              .ton:hover{
+               cursor:pointer;
+              background-color: #f63e4e;
+              color: #fff;
+              transition: all 0.5s;
+              }
+              
+
+                          /* Chooklete */
+
+                          .product {
+                            padding: 50px 0;
+                        }
+                        
+                        .heading {
+                            text-align: center;
+                            margin-top: 3%;
+                            margin-bottom: 2%;
+                        }
+                        
+                        .row {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        }
+                        
+                        .box {
+                            width: calc(100% / 3); /* Ensure each box occupies one-third of the row width */
+                            padding: 10px;
+                            box-sizing: border-box; /* Ensure padding is included in the width */
+                        }
+                        
+                        .img {
+                            text-align: center;
+                        }
+                        
+                        .img img {
+                            max-width: 100%;
+                            height: auto;
+                            transition:all 1s;
+                        }
+                        .product .row .img img:hover{
+                          transform: scale(0.9);
+                      }
+                        .content {
+                            text-align: center;
+                        }
+                        
+                        .order button {
+                            padding: 10px 20px;
+                            background-color: green;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                     .product .row .content .order button:hover{
+                           font-size: 1.1rem;
+                           cursor: pointer;
+                     }
+                     
+                        /* Media Queries */
+                        
+                        @media (max-width: 992px) {
+                            .box {
+                                width: calc(100% / 2); /* On smaller screens, make each box occupy half of the row width */
+                            }
+                        }
+                        
+                        @media (max-width: 768px) {
+                            .box {
+                                width: 100%; /* On even smaller screens, make each box occupy the full row width */
+                            }
+                        }
+                        
+                        .top{
+                            display: flex;
+                            align-items:center;
+                            text-align: center;
+                             padding-bottom: 50px;
+                        }
+                        #ba{
+                          width: 100%;
+                          height: auto;  
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          padding: 0px 90px;
+                          flex-wrap: wrap;
+                        }
+                        .top .st {
+                             margin: 20px 20px;  
+                        }
+                         .st #lo{
+                            width: 100%;
+                           height: auto; 
+                           overflow: hidden;
+                         }
+                        .st #lo img{
+                           width: 100%;
+                           height: auto;
+                           transition: all 2s;
+                        }
+                        #lo img:hover{
+                          transform: scale(1.1);
+                        }
+                        .st p{ 
+                           font-size: 16px;margin-left: 10px;
+                           line-height: 1.5;
+                           padding: 0px 5px;
+                           margin-bottom: 20px;
+                           font-family: sans-serif;
+                         }
+                         .st h2{
+                           font-size: 28px;
+                         margin: 15px 0px;color: #1662a1;
+                         font-family: sans-serif;  
+                        }
+                        #BAR{
+                            font-size: 18px;padding: 10px 20px 10px 20px;
+                            border-radius: 20%;
+                            transition: all 1s;
+                        }
+                        #BAR:hover{
+                            cursor: pointer;
+                            background-color: greenyellow;
+                            transform: scale(0.9);
+                        }
+                        .hei{
+                            border-bottom: 3px solid goldenrod;
+                            width: 500px;
+                        }
+                        .fle{
+                            display: flex;
+                            justify-content: center;
+                            justify-content: space-around;
+                            text-align: center;
+                        }
+
+                        /* namkeen */
+  
+                        #nam{
+                          background-image: url(/image/banner2.jpg);
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          height: 500px;
+                          text-align: center;
+                          margin-top: 1.5%;
+                        }
+                        #tas{
+                          width: 300px;
+                          position:absolute;
+                          margin-top: 270px;
+                          margin-left: 150px;
+                          background-color: red;
+                          color: white;
+                          padding: 20px;
+                        }
+                        #bog{
+                          border-top: 3px solid goldenrod;
+                          width: 500px;
+                        }
+                        #per{
+                          width: 430px;
+                        }
+  /* Footer  */
+
+
+.footer {
+  background-color: greenyellow;
+  width: 100%;
+  color: #242626;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+.chil5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+ul {
+  list-style:none;
+}
+.con {
+  margin-right: 20px;
+  margin-bottom: 20px; /* Add margin bottom for spacing between columns */
+}
+
+.social i {
+  margin: 20px 10px; /* Reduce margin for social icons */
+  font-size: 24px; /* Decrease font size for social icons */
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  /* Tablet and larger devices */
+  .con {
+      flex: 1; /* Equal width columns */
+      max-width: 33.33%; /* Set maximum width for each column */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Desktop */
+  .con {
+      max-width: 25%; /* Reduce maximum width for each column */
+  }
+}

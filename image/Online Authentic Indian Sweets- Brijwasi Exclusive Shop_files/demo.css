@@ -1,0 +1,22 @@
+.post{
+	text-align: left;
+	margin:0px 0px;
+	z-index:1;
+}
+.phone
+{
+
+}
+
+
+
+
+/* Required */
+
+.hidden{
+	opacity: 1;
+}
+
+.visible{
+	opacity: 1;
+}
